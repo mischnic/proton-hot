@@ -9,7 +9,7 @@
 		"lint": "prettier --use-tabs --tab-width=4 --write *.js"
 	},
 	"bin": {
-		"proton-hot": "./cli.js"
+		"proton-hot-cli": "./cli.js"
 	},
 	"dependencies": {
 		"@mischnic/babel-plugin-proton-hot": "^1.0.0",
