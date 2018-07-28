@@ -1,0 +1,27 @@
+{
+	"name": "proton-hot",
+	"author": "Niklas Mischkulnig",
+	"description": "A hot-reloading babel-node for proton-native apps",
+	"license": "MIT",
+	"version": "0.1.0",
+	"main": "cli.js",
+	"scripts": {
+		"lint": "prettier --use-tabs --tab-width=4 --write *.js"
+	},
+	"dependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"babel-plugin-proton-hot": "mischnic/babel-plugin-proton-hot",
+		"commander": "^2.16.0",
+		"node-hot-loader": "1.9.0",
+		"prettier": "^1.13.7",
+		"webpack": "^4.6.0",
+		"webpack-node-externals": "^1.7.2"
+	},
+	"devDependencies": {
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"proton-native": "^1.1.8",
+		"react": "^16.4.1"
+	}
+}
