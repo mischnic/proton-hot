@@ -8,6 +8,9 @@
 	"scripts": {
 		"lint": "prettier --use-tabs --tab-width=4 --write *.js"
 	},
+	"bin": {
+		"proton-hot" : "./cli.js"
+	},
 	"dependencies": {
 		"babel-core": "^6.26.3",
 		"babel-loader": "^7.1.4",

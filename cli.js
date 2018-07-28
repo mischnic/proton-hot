@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const path = require("path");
 const program = require("commander");
 
@@ -15,7 +16,7 @@ if (main) {
 	node_hot({
 		fork: true,
 		config: require(path.join(__dirname, "webpack.config.js"))(
-			path.resolve(file)
+			path.resolve(main)
 		)
 	});
 } else {
