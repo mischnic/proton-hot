@@ -13,3 +13,9 @@ Hot Reloading for [proton-native](https://github.com/kusti8/proton-native).
     -o, --out_dir <n>  The output directory. Default: './build'
     -h, --help         output usage information
 ```
+
+You can disable hot reloading (for both imported and exported components) on a per-file basis:
+```js
+// @proton-hot-disable
+import ...
+```
