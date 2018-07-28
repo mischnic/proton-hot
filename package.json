@@ -16,6 +16,8 @@
 		"babel-core": "^6.26.3",
 		"babel-loader": "^7.1.4",
 		"commander": "^2.16.0",
+		"find-babel-config": "^1.1.0",
+		"json5": "^1.0.1",
 		"node-hot-loader": "1.9.0",
 		"prettier": "^1.13.7",
 		"webpack": "^4.6.0",

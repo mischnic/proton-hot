@@ -9,7 +9,9 @@ let main, out_dir;
 
 program
 	.usage("<main.js>")
-	.description("Run `main.js` with proton-native hot reloading (similar to babel-node)")
+	.description(
+		"Run `main.js` with proton-native hot reloading (similar to babel-node)"
+	)
 	.option("-o, --out_dir <n>", "The output directory. Default: './build'")
 	.action((_main, options) => {
 		out_dir = options.out_dir || "./build";
@@ -19,7 +21,7 @@ program
 program.parse(process.argv);
 
 if (main) {
-	if(fs.existsSync(main)){
+	if (fs.existsSync(main)) {
 		node_hot({
 			fork: true,
 			config: require(path.join(__dirname, "webpack.config.js"))(

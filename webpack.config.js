@@ -1,16 +1,18 @@
 const path = require("path");
+const fs = require("fs");
 const nodeExternals = require("webpack-node-externals");
+const findBabelConfig = require("find-babel-config")
+const JSON5 = require("json5");
 
-const babelrc = JSON.parse(
-	require("fs")
-		.readFileSync(".babelrc")
-		.toString()
-		.split("\n")
-		.filter(v => !/\s\/\//.test(v))
-		.join("\n")
-);
-babelrc.plugins = babelrc.plugins || [];
-babelrc.plugins.push(require.resolve("@mischnic/babel-plugin-proton-hot"));
+
+
+
+function getConfig(dir){
+	const config = findBabelConfig.sync(dir).config || {};
+	config.plugins = config.plugins || [];
+	config.plugins.push(require.resolve("@mischnic/babel-plugin-proton-hot"));
+	return config;
+}
 
 module.exports = (output, main) => ({
 	entry: {
@@ -30,7 +32,7 @@ module.exports = (output, main) => ({
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader",
-					options: babelrc
+					options: getConfig(path.dirname(main))
 				}
 			}
 		]
