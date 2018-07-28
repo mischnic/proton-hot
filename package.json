@@ -20,11 +20,5 @@
 		"prettier": "^1.13.7",
 		"webpack": "^4.6.0",
 		"webpack-node-externals": "^1.7.2"
-	},
-	"devDependencies": {
-		"babel-preset-env": "^1.7.0",
-		"babel-preset-react": "^6.24.1",
-		"proton-native": "^1.1.8",
-		"react": "^16.4.1"
 	}
 }

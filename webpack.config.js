@@ -12,7 +12,7 @@ const babelrc = JSON.parse(
 babelrc.plugins = babelrc.plugins || [];
 babelrc.plugins.push(require.resolve("babel-plugin-proton-hot"));
 
-module.exports = main => ({
+module.exports = (output, main) => ({
 	entry: {
 		main
 	},
@@ -37,7 +37,7 @@ module.exports = main => ({
 	},
 
 	output: {
-		path: path.join(__dirname, "build"),
+		path: output,
 		filename: "bundle.js"
 	},
 
@@ -45,8 +45,8 @@ module.exports = main => ({
 
 	target: "node",
 	mode: "development",
-	externals: {
-		"libui-node": "commonjs libui-node"
-	}
-	// externals: [nodeExternals()]
+	// externals: {
+	// 	"libui-node": "commonjs libui-node"
+	// }
+	externals: [nodeExternals()]
 });
