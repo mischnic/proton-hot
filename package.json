@@ -1,5 +1,5 @@
 {
-	"name": "proton-hot",
+	"name": "proton-hot-cli",
 	"author": "Niklas Mischkulnig",
 	"description": "A hot-reloading babel-node for proton-native apps",
 	"license": "MIT",
