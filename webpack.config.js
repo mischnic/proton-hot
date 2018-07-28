@@ -10,7 +10,7 @@ const babelrc = JSON.parse(
 		.join("\n")
 );
 babelrc.plugins = babelrc.plugins || [];
-babelrc.plugins.push(require.resolve("babel-plugin-proton-hot"));
+babelrc.plugins.push(require.resolve("@mischnic/babel-plugin-proton-hot"));
 
 module.exports = (output, main) => ({
 	entry: {

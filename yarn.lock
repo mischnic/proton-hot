@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@mischnic/babel-plugin-proton-hot@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@mischnic/babel-plugin-proton-hot/-/babel-plugin-proton-hot-1.0.0.tgz#4e837eaf6f5a01355675e2d009051c6a11ffd361"
+  dependencies:
+    react-proxy "^1.1.8"
+
 "@webassemblyjs/ast@1.5.13":
   version "1.5.13"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.5.13.tgz#81155a570bd5803a30ec31436bc2c9c0ede38f25"
@@ -302,12 +308,6 @@ babel-messages@^6.23.0:
   resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
   dependencies:
     babel-runtime "^6.22.0"
-
-babel-plugin-proton-hot@mischnic/babel-plugin-proton-hot:
-  version "1.0.0"
-  resolved "https://codeload.github.com/mischnic/babel-plugin-proton-hot/tar.gz/83c689166435bd4f195b6c5d24d6b2e43fa6623c"
-  dependencies:
-    react-proxy "^1.1.8"
 
 babel-register@^6.26.0:
   version "6.26.0"
