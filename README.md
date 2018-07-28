@@ -2,6 +2,8 @@
 
 Hot Reloading for [proton-native](https://github.com/kusti8/proton-native).
 
+For an example, take a look at [proton-hot-example](https://github.com/mischnic/proton-hot-example)
+
 ```
 
   Usage: proton-hot-cli <main>
