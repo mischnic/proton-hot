@@ -1,13 +1,10 @@
 const path = require("path");
 const fs = require("fs");
 const nodeExternals = require("webpack-node-externals");
-const findBabelConfig = require("find-babel-config")
+const findBabelConfig = require("find-babel-config");
 const JSON5 = require("json5");
 
-
-
-
-function getConfig(dir){
+function getConfig(dir) {
 	const config = findBabelConfig.sync(dir).config || {};
 	config.plugins = config.plugins || [];
 	config.plugins.push(require.resolve("@mischnic/babel-plugin-proton-hot"));
