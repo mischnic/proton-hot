@@ -6,6 +6,7 @@
 	"version": "0.1.0",
 	"main": "cli.js",
 	"scripts": {
+		"start": "cd example && cross-env TEST_CLI=true ../cli.js src/index.js",
 		"lint": "prettier --use-tabs --tab-width=4 --write *.js"
 	},
 	"bin": {
@@ -18,9 +19,16 @@
 		"commander": "^2.16.0",
 		"find-babel-config": "^1.1.0",
 		"json5": "^1.0.1",
-		"node-hot-loader": "1.9.0",
-		"prettier": "^1.13.7",
+		"node-hot-loader": "1.10.1",
 		"webpack": "^4.6.0",
 		"webpack-node-externals": "^1.7.2"
+	},
+	"devDependencies": {
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"cross-env": "^5.2.0",
+		"prettier": "^1.13.7",
+		"proton-native": "^1.1.8",
+		"react": "^16.4.1"
 	}
 }

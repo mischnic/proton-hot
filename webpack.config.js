@@ -11,9 +11,9 @@ function getConfig(dir) {
 	return config;
 }
 
-module.exports = (output, main) => ({
+module.exports = opts => ({
 	entry: {
-		main
+		main: opts.main
 	},
 
 	context: process.cwd(),
@@ -29,23 +29,29 @@ module.exports = (output, main) => ({
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader",
-					options: getConfig(path.dirname(main))
+					options: getConfig(path.dirname(opts.main))
 				}
 			}
 		]
 	},
 
 	output: {
-		path: output,
+		path: opts.output,
 		filename: "bundle.js"
 	},
 
-	stats: "minimal",
+	stats: opts.logLevel,
 
 	target: "node",
 	mode: "development",
 	// externals: {
 	// 	"libui-node": "commonjs libui-node"
 	// }
-	externals: [nodeExternals()]
+	externals:
+		process.env.TEST_CLI !== "true"
+			? [nodeExternals()]
+			: [
+					nodeExternals(),
+					nodeExternals({ modulesDir: "../node_modules" })
+			  ]
 });

@@ -6,14 +6,15 @@ For an example, take a look at [proton-hot-example](https://github.com/mischnic/
 
 ```
 
-  Usage: proton-hot-cli <main.js>
+  Usage: cli <main.js>
 
   Run `main.js` with proton-native hot reloading (similar to babel-node)
 
   Options:
 
-    -o, --out_dir <n>  The output directory. Default: './build'
-    -h, --help         output usage information
+    -o, --out-dir <dir>      The output directory (default: ./build)
+    -l, --log-level <level>  Log level (normal, minimal, errors-only or none) (default: errors-only)
+    -h, --help               output usage information
 
 ```
 
