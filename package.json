@@ -30,5 +30,10 @@
 		"prettier": "^1.13.7",
 		"proton-native": "^1.1.8",
 		"react": "^16.4.1"
-	}
+	},
+	"files": [
+		"cli.js",
+		"node-node-hot-loader-patch.js",
+		"webpack.config.js"
+	]
 }
