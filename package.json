@@ -33,7 +33,7 @@
 	},
 	"files": [
 		"cli.js",
-		"node-node-hot-loader-patch.js",
+		"node-hot-loader-patch.js",
 		"webpack.config.js"
 	]
 }
