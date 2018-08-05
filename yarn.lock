@@ -2853,8 +2853,8 @@ prop-types@^15.6.0, prop-types@^15.6.1:
     object-assign "^4.1.1"
 
 proton-native@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/proton-native/-/proton-native-1.1.8.tgz#dad126aa943d38ad8c8ae9f30b3e9fda3278972c"
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/proton-native/-/proton-native-1.1.9.tgz#5a4afa10d9c14ce61cc0fff2667e2f6a0ca6d297"
   dependencies:
     color "^3.0.0"
     fbjs "^0.8.16"
