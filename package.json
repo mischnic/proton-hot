@@ -3,7 +3,7 @@
 	"author": "Niklas Mischkulnig",
 	"description": "A hot-reloading babel-node for proton-native apps",
 	"license": "MIT",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "cli.js",
 	"scripts": {
 		"start": "cd example && cross-env TEST_CLI=true ../cli.js src/index.js",
