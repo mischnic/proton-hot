@@ -1,4 +1,4 @@
-// source: https://github.com/vlazh/node-hot-loader/blob/master/src/loader.js
+// https://github.com/vlazh/node-hot-loader/blob/v1.10.1/src/loader.js
 
 // MIT License
 //

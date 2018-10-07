@@ -18,7 +18,6 @@
 		"babel-loader": "^7.1.4",
 		"commander": "^2.16.0",
 		"find-babel-config": "^1.1.0",
-		"json5": "^1.0.1",
 		"node-hot-loader": "1.10.1",
 		"webpack": "^4.6.0",
 		"webpack-node-externals": "^1.7.2"
